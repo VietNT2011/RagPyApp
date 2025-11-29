@@ -12,10 +12,6 @@ dependencies = [
     "openai>=2.8.1",
     "python-dotenv>=1.2.1",
     "qdrant-client>=1.16.1",
-    "streamlit>=uv info1.51.0",
+    "streamlit>=1.51.0",
     "uvicorn>=0.38.0",
 ]
-
-[project.scripts]
-start = "scripts:start"
-inngest-ui = "scripts:inngest_ui"
