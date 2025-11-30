@@ -3,10 +3,10 @@ import uvicorn
 import sys
 
 def start():
-    uvicorn.run("main:app")
+    uvicorn.run("main:app", reload=True)
 
 def inngest_ui():
-    os.system("npx inngest-cli@latest dev -u http://127.0.0.1:8000")
+    os.system("npx inngest-cli@latest dev -u http://127.0.0.1:8000/api/inngest")
 
 # Only run when executed directly on command line
 if __name__ == "__main__":
